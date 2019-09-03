@@ -1,0 +1,49 @@
+Tabla 1. Inicia
+CREATE TABLE categorias(
+    codigo int auto_increment primary key,
+    nombre VARCHAR(50) UNIQUE
+);
+Finaliza
+esto solo es para insertar desde la base de datos, o consultar.
+INSERT INTO categorias(nombre) values("Medicina");
+select *FROM categorias;
+delete from categorias where codigo=6;
+
+Tabla 2. Inicia
+CREATE TABLE proveedores(
+    nit varchar(20) primary key,
+    nombre VARCHAR(100) UNIQUE,
+    telefono VARCHAR(15),
+    direccion VARCHAR(100),
+    email VARCHAR(100)
+);
+Finaliza
+
+esto solo es para insertar desde la base de datos, o consultar.
+select *FROM editoriales;
+INSERT INTO proveedores(nit,nombre,telefono,direccion,email) values('7914014-9','SEARS','7943-1496','5-80 zona 2 barrio las crusitas','estuardobc@gmail.es');
+
+Tabla 3. Inicia
+CREATE TABLE articulos(
+    codigo varchar(20) primary key,
+    nombre VARCHAR(100) not null,
+    descripcion VARCHAR(255),
+    fecha_registro datetime,
+    codigo_categoria int,
+    nit_proveedores varchar(20),
+    foreign key(codigo_categoria) references categorias(codigo),
+    foreign key(nit_proveedores) references proveedores(nit)
+);
+Finaliza
+
+update libros set
+    titulo=?,
+    descripcion=?,
+    publicacion=?,
+    fecha_registro=?,
+    codigo_categoria=?,
+    nit_editorial=?
+where isbn=?
+
+select *FROM libros;
+INSERT INTO articulos values('001A', 'Escritorio', 'Comodida y satisfaccion, 100% madera', (select now()), 1,'7914014-9');

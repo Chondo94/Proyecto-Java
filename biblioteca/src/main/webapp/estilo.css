@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/03/2019, 09:43:58 AM
+    Author     : estua
+*/
+
+body{
+    background-color: #e8c53c;
+}
+.tab{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    background-color: wheat;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+.form-group{
+    align-content: center;
+}
+
+.alinear{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+.alinear2{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    background-color: wheat;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
